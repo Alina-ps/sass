@@ -1,5 +1,5 @@
-@use "sass:math";
-@use "btn-scema" as vars with (
+@use 'sass:math';
+@use 'btn-scema' as vars with (
   $font-size: 10px,
   $btn-color: black,
   $btn-bgcolor: lightblue
@@ -11,4 +11,4 @@
   background-color: vars.$btn-bgcolor;
 }
 
-@debug math.$pi;
+@debug math.$pi; // cannot update

@@ -2,7 +2,7 @@ $color-primary: teal; // global scope
 
 body {
   $color-primary: lightblue; // local scope
-  $color-secondary: white !global;
+  $color-secondary: white !global; // to make local var accessible globally use !global
   background-color: $color-primary;
 }
 

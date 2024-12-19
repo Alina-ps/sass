@@ -1,13 +1,13 @@
-// $color-primary-text: #888; // kebeb case
+// $color-primary-text: #888; // kebeb case, розділювач -
 // $color-blue-text: lightblue; // kebeb case
 
 // $colorPrimaryText: #888; // camel case
 // $colorBlueText: lightblue; // camel case
 
-// $color_primary_text: #888; // snake case
+// $color_primary_text: #888; // snake case, розділювач _
 // $color_blue_text: lightblue; // snake case
 
-$font-size: 16px;
+$font-size: 16px; // $font-size = variable, so we can use this word later in text as value;
 
 .title {
   font-size: $font-size;
