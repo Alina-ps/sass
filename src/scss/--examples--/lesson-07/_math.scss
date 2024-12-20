@@ -17,13 +17,18 @@ $vaule: 600px;
   width: 2 * (600px + 50px);
 
   width: $vaule / 5;
+  // 600px / 5 will not work, it should be inside ()
   width: (600px / 2);
   width: 600px / 3 + 100px;
+
+  // if use @debug then (600px / 5px) we will get result 120 in console
+  // (120 + 10px) // 130px
 }
 /*|============================
   | Інтерполяція
   |============================
 */
+$name: 'box';
 $margin: 100px;
 .box {
   width: $margin * 2;
@@ -31,4 +36,8 @@ $margin: 100px;
 .box {
   width: calc($margin * 2);
   width: calc(#{$margin} * 2);
+}
+
+.#{$name} {
+  margin: $margin; // .box {margin: 100px)
 }

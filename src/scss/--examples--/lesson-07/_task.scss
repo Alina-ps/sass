@@ -63,3 +63,18 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+
+// interpolation example
+$status: (
+  'completed': #a461d8,
+  'ended': #fc5a5a,
+  'active': #82c43c,
+);
+
+// instead of writing separately color for each completed, active, ended we can use this construction
+
+@each $name, $color in $status {
+  .badge-#{$name} {
+    background-color: $color;
+  }
+}
